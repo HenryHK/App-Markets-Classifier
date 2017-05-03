@@ -4,6 +4,7 @@ import csv
 from operator import itemgetter
 
 import numpy as np
+import math
 
 
 def concentrateData(train_data, labeled_data):
@@ -29,7 +30,16 @@ def labelCount(labeled_data):
             labelDict[data[1]] = 1
     return labelDict
 
+def labelCount1(training_data):
+    labelDict = {}
+    for data in training_data:
+        if data[1] in labelDict.keys():
+            labelDict[data[1]] = labelDict[data[1]]+1
+        else:
+            labelDict[data[1]] = 1
+    return labelDict 
 
+# have some problem here
 def getLabelProb(labeled_training_list, labelDict):
     labelProbDict = {}
     for label in labelDict.keys():
@@ -38,7 +48,7 @@ def getLabelProb(labeled_training_list, labelDict):
         if data[1] in labelDict.keys():
             for index in range(13626):
                 if float(data[index+2]) > 0:
-                    labelProbDict[label][index] += 1
+                    labelProbDict[data[1]][index] += 1 #change lable to data[1]
     for label in labelDict.keys():
         labelProbDict[label] = labelProbDict[label]/labelDict[label]
     return labelProbDict
@@ -51,8 +61,8 @@ def run():
     pass
 
 labeled_training_list = concentrateData("assignment1_2017S1/training_data.csv", "assignment1_2017S1/training_labels.csv")
-labelDict = labelCount("assignment1_2017S1/training_labels.csv")
-labelProbDict = getLabelProb(labeled_training_list, labelDict)
+
+
 
 
 i = 0
@@ -60,9 +70,18 @@ test_data = []
 for data in labeled_training_list:
     test_data.append(data)
     i += 1
-    if(i==1000):
+    if(i==2000):
         break
 
+i = 0
+training_data = []
+for data in labeled_training_list:
+    if(i>1999):
+        training_data.append(data)
+    i += 1
+
+labelDict = labelCount1(training_data)
+labelProbDict = getLabelProb(training_data, labelDict)
 
 result = 0
 for data in test_data:
@@ -71,10 +90,14 @@ for data in test_data:
         prob = 1.0
         for index in range(13626):
             if float(data[index+2])>0:
-                prob *= labelProbDict[label][index]
+                # print("positive: "+labelProbDict[label][index])
+                if(labelProbDict[label][index]!=0):
+                    prob += math.log(labelProbDict[label][index])
             else:
-                prob *= (1-labelProbDict[label][index])
-        probDict[label] = prob*(labelDict[label]/20104)
+                # print("negative: "+(1-labelProbDict[label][index]))
+                if(1-labelProbDict[label][index]!=0):
+                    prob += math.log(1-labelProbDict[label][index])
+        probDict[label] = prob+math.log(labelDict[label]/20104)
     label = max(probDict.items(), key=itemgetter(1))[0]
     if(label == data[1]):
         result += 1
