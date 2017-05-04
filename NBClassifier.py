@@ -92,7 +92,7 @@ for data in test_data:
             if float(data[index+2])>0:
                 # print("positive: "+labelProbDict[label][index])
                 #if(labelProbDict[label][index]!=0):
-                prob += labelProbDict[label][index]
+                prob *= labelProbDict[label][index]
             else:
                 # print("negative: "+(1-labelProbDict[label][index]))
                 #if(1-labelProbDict[label][index]!=0):
