@@ -65,41 +65,47 @@ labeled_training_list = concentrateData("assignment1_2017S1/training_data.csv", 
 
 
 
+# i = 0
+# test_data = []
+# for data in labeled_training_list:
+#     test_data.append(data)
+#     i += 1
+#     if(i==2000):
+#         break
+
+# i = 0
+# training_data = []
+# for data in labeled_training_list:
+#     if(i>3000):
+#         training_data.append(data)
+#     i += 1
 i = 0
-test_data = []
-for data in labeled_training_list:
-    test_data.append(data)
-    i += 1
-    if(i==2000):
-        break
 
-i = 0
-training_data = []
-for data in labeled_training_list:
-    if(i>1999):
-        training_data.append(data)
-    i += 1
+for i in range(0,10):
+    test_data = labeled_training_list[i*2000:(i+1)*2000]
+    training_data = labeled_training_list[0:i*2000] + labeled_training_list[(i+1)*2000:]
 
-labelDict = labelCount1(training_data)
-labelProbDict = getLabelProb(training_data, labelDict)
+    labelDict = labelCount1(training_data)
+    labelProbDict = getLabelProb(training_data, labelDict)
 
-result = 0
-for data in test_data:
-    probDict = {}
-    for label in labelProbDict.keys():
-        prob = 1.0
-        for index in range(13626):
-            if float(data[index+2])>0:
-                # print("positive: "+labelProbDict[label][index])
-                #if(labelProbDict[label][index]!=0):
-                prob *= labelProbDict[label][index]
-            else:
-                # print("negative: "+(1-labelProbDict[label][index]))
-                #if(1-labelProbDict[label][index]!=0):
-                prob *= 1-labelProbDict[label][index]
-        probDict[label] = prob*(labelDict[label]/20104)
-    label = max(probDict.items(), key=itemgetter(1))[0]
-    if(label == data[1]):
-        result += 1
+    result = 0
+    for data in test_data:
+        probDict = {}
+        for label in labelProbDict.keys():
+            prob = 1.0
+            for index in range(13626):
+                if float(data[index+2])>0:
+                    # print("positive: "+labelProbDict[label][index])
+                    #if(labelProbDict[label][index]!=0):
+                    prob *= labelProbDict[label][index]
+                else:
+                    # print("negative: "+(1-labelProbDict[label][index]))
+                    #if(1-labelProbDict[label][index]!=0):
+                    prob *= 1-labelProbDict[label][index]
+            probDict[label] = prob*(labelDict[label]/20104)
+        label = max(probDict.items(), key=itemgetter(1))[0]
+        if(label == data[1]):
+            result += 1
+    print(result)
 
-print(result)
+
