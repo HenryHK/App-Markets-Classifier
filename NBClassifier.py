@@ -6,6 +6,7 @@ from operator import itemgetter
 import numpy as np
 import math
 import random
+from sklearn import metrics
 
 #42%
 
@@ -19,7 +20,7 @@ def concentrateData(train_data, labeled_data):
                 line.insert(1, l[1])
                 break
     random.shuffle(training_list)
-    return training_list[0:10000]
+    return training_list[0:20000]
 
 def labelCount1(training_data): 
     labelDict = {}
@@ -57,14 +58,18 @@ labeled_training_list = concentrateData("assignment1_2017S1/training_data.csv", 
 
 i = 0
 
+recall_string = ""
+
 for i in range(0,10):
     random.shuffle(labeled_training_list)
-    test_data = labeled_training_list[0:1000]
-    training_data = labeled_training_list[1000:]
+    test_data = labeled_training_list[0:2000]
+    training_data = labeled_training_list[2000:]
     labelDict = labelCount1(training_data)
     labelProbDict = getLabelProb(training_data, labelDict)
 
     result = 0
+    result_list = []
+    data_list = []
     for data in test_data:
         probDict = {}
         for label in labelProbDict.keys():
@@ -78,10 +83,14 @@ for i in range(0,10):
                 #     # print("negative: "+(1-labelProbDict[label][index]))
                 #     #if(1-labelProbDict[label][index]!=0):
                 #     prob *= 1-labelProbDict[label][index]
-            probDict[label] = prob + labelDict[label]/9000
+            probDict[label] = prob + labelDict[label]/18000
         label = max(probDict.items(), key=itemgetter(1))[0]
+        result_list.append(label)
+        data_list.append(data[1])
         if(label == data[1]):
             result += 1
-    print(result/1000)
+    print(metrics.classification_report(result_list, data_list))
+    recall_string += metrics.classification_report(result_list, data_list)+"\n"
+print("The prediction result is \n", recall_string)
 
 

@@ -1,0 +1,350 @@
+The prediction result is 
+                      precision    recall  f1-score   support
+
+  Arcade and Action       0.58      0.39      0.47        82
+Books and Reference       0.42      0.83      0.56        41
+   Brain and Puzzle       0.65      0.51      0.57        77
+           Business       0.48      0.39      0.43        82
+   Cards and Casino       0.82      0.80      0.81        69
+             Casual       0.33      0.44      0.38        57
+             Comics       0.19      0.88      0.31         8
+      Communication       0.47      0.58      0.52        60
+          Education       0.56      0.56      0.56        80
+      Entertainment       0.06      0.80      0.11         5
+            Finance       0.87      0.63      0.73        84
+ Health and Fitness       0.67      0.64      0.66        73
+ Libraries and Demo       0.02      0.50      0.04         2
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.49      0.68      0.57        50
+            Medical       0.79      0.76      0.77        58
+    Music and Audio       0.92      0.53      0.67       104
+ News and Magazines       0.61      0.74      0.67        65
+    Personalization       0.81      0.40      0.54       160
+        Photography       0.83      0.41      0.55       158
+       Productivity       0.60      0.18      0.28       178
+             Racing       0.80      0.63      0.70        91
+           Shopping       0.72      0.74      0.73        58
+             Social       0.19      0.83      0.31        18
+             Sports       0.42      0.82      0.56        34
+       Sports Games       0.49      0.70      0.58        46
+              Tools       0.18      0.44      0.26        27
+     Transportation       0.35      0.56      0.43        45
+   Travel and Local       0.65      0.46      0.54       116
+            Weather       0.91      0.60      0.72        72
+
+        avg / total       0.66      0.53      0.56      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.66      0.50      0.57        76
+Books and Reference       0.33      0.66      0.44        29
+   Brain and Puzzle       0.73      0.65      0.69        88
+           Business       0.40      0.31      0.35        83
+   Cards and Casino       0.85      0.71      0.77        75
+             Casual       0.39      0.54      0.45        52
+             Comics       0.09      0.60      0.15         5
+      Communication       0.39      0.56      0.46        52
+          Education       0.53      0.55      0.54        76
+      Entertainment       0.05      0.67      0.10         6
+            Finance       0.88      0.71      0.78       100
+ Health and Fitness       0.63      0.47      0.54        79
+ Libraries and Demo       0.08      1.00      0.15         4
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.45      0.57      0.50        53
+            Medical       0.72      0.78      0.75        69
+    Music and Audio       0.89      0.55      0.67        99
+ News and Magazines       0.64      0.64      0.64        73
+    Personalization       0.90      0.43      0.58       146
+        Photography       0.92      0.44      0.60       177
+       Productivity       0.57      0.22      0.32       163
+             Racing       0.79      0.63      0.70        90
+           Shopping       0.62      0.74      0.68        68
+             Social       0.22      0.70      0.33        23
+             Sports       0.46      0.79      0.58        33
+       Sports Games       0.50      0.74      0.60        31
+              Tools       0.17      0.46      0.25        24
+     Transportation       0.39      0.70      0.50        40
+   Travel and Local       0.73      0.44      0.55       105
+            Weather       0.91      0.65      0.76        81
+
+        avg / total       0.68      0.54      0.57      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.50      0.38      0.43        77
+Books and Reference       0.25      0.79      0.38        28
+   Brain and Puzzle       0.75      0.54      0.63       104
+           Business       0.42      0.43      0.42        74
+   Cards and Casino       0.89      0.74      0.81        74
+             Casual       0.31      0.48      0.38        52
+             Comics       0.11      0.75      0.19         4
+      Communication       0.66      0.65      0.65        77
+          Education       0.51      0.48      0.50        81
+      Entertainment       0.04      0.38      0.08         8
+            Finance       0.77      0.72      0.74        67
+ Health and Fitness       0.73      0.58      0.65       105
+ Libraries and Demo       0.02      0.50      0.04         2
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.42      0.61      0.50        49
+            Medical       0.71      0.73      0.72        62
+    Music and Audio       0.81      0.54      0.65       100
+ News and Magazines       0.63      0.75      0.68        56
+    Personalization       0.88      0.43      0.58       141
+        Photography       0.90      0.37      0.53       145
+       Productivity       0.64      0.15      0.24       234
+             Racing       0.78      0.53      0.63        86
+           Shopping       0.69      0.82      0.75        66
+             Social       0.18      0.88      0.30        17
+             Sports       0.40      0.82      0.54        33
+       Sports Games       0.48      0.62      0.54        32
+              Tools       0.17      0.50      0.25        24
+     Transportation       0.33      0.77      0.46        31
+   Travel and Local       0.66      0.39      0.49        97
+            Weather       0.88      0.61      0.72        74
+
+        avg / total       0.66      0.51      0.54      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.63      0.67      0.65        69
+Books and Reference       0.32      0.71      0.44        35
+   Brain and Puzzle       0.74      0.54      0.62        83
+           Business       0.51      0.33      0.40       103
+   Cards and Casino       0.90      0.64      0.75        73
+             Casual       0.40      0.58      0.47        53
+             Comics       0.28      0.89      0.42         9
+      Communication       0.40      0.51      0.45        59
+          Education       0.59      0.57      0.58        84
+      Entertainment       0.05      0.50      0.10         8
+            Finance       0.81      0.74      0.77        74
+ Health and Fitness       0.63      0.62      0.63        81
+ Libraries and Demo       0.13      0.71      0.22         7
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.42      0.53      0.47        55
+            Medical       0.69      0.73      0.71        75
+    Music and Audio       0.77      0.57      0.65       109
+ News and Magazines       0.70      0.69      0.70        71
+    Personalization       0.83      0.50      0.62       137
+        Photography       0.94      0.43      0.59       154
+       Productivity       0.72      0.23      0.35       205
+             Racing       0.89      0.63      0.74        98
+           Shopping       0.64      0.77      0.70        61
+             Social       0.19      0.70      0.30        20
+             Sports       0.43      0.82      0.57        28
+       Sports Games       0.51      0.69      0.59        26
+              Tools       0.15      0.44      0.23        18
+     Transportation       0.33      0.73      0.45        33
+   Travel and Local       0.67      0.51      0.58        91
+            Weather       0.94      0.59      0.73        81
+
+        avg / total       0.68      0.55      0.58      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.66      0.51      0.58        80
+Books and Reference       0.30      0.67      0.42        33
+   Brain and Puzzle       0.70      0.60      0.64        77
+           Business       0.52      0.30      0.38        90
+   Cards and Casino       0.93      0.77      0.84       104
+             Casual       0.40      0.60      0.48        52
+             Comics       0.17      1.00      0.29         5
+      Communication       0.42      0.64      0.51        39
+          Education       0.55      0.47      0.51        81
+      Entertainment       0.05      0.40      0.10        10
+            Finance       0.88      0.63      0.73        94
+ Health and Fitness       0.64      0.59      0.61        82
+ Libraries and Demo       0.09      1.00      0.17         4
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.34      0.80      0.48        35
+            Medical       0.68      0.79      0.73        62
+    Music and Audio       0.79      0.58      0.67       107
+ News and Magazines       0.73      0.71      0.72        84
+    Personalization       0.89      0.47      0.61       126
+        Photography       0.86      0.40      0.54       161
+       Productivity       0.64      0.19      0.30       221
+             Racing       0.75      0.58      0.65        73
+           Shopping       0.74      0.88      0.81        66
+             Social       0.11      0.47      0.18        17
+             Sports       0.37      0.84      0.51        31
+       Sports Games       0.61      0.69      0.65        39
+              Tools       0.03      0.25      0.06         8
+     Transportation       0.40      0.73      0.52        41
+   Travel and Local       0.72      0.48      0.58        95
+            Weather       0.88      0.55      0.68        83
+
+        avg / total       0.69      0.54      0.57      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.63      0.52      0.57        73
+Books and Reference       0.45      0.72      0.55        40
+   Brain and Puzzle       0.66      0.64      0.65        80
+           Business       0.43      0.29      0.35       107
+   Cards and Casino       0.94      0.80      0.87        76
+             Casual       0.41      0.63      0.50        46
+             Comics       0.04      1.00      0.07         1
+      Communication       0.48      0.54      0.51        59
+          Education       0.64      0.55      0.59        85
+      Entertainment       0.07      0.50      0.12         8
+            Finance       0.90      0.68      0.77        90
+ Health and Fitness       0.58      0.61      0.59        69
+ Libraries and Demo       0.07      1.00      0.14         3
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.35      0.62      0.45        45
+            Medical       0.75      0.71      0.73        68
+    Music and Audio       0.79      0.53      0.63       108
+ News and Magazines       0.69      0.79      0.73        77
+    Personalization       0.89      0.40      0.55       157
+        Photography       0.91      0.45      0.60       150
+       Productivity       0.57      0.22      0.32       190
+             Racing       0.81      0.54      0.65        95
+           Shopping       0.68      0.88      0.77        60
+             Social       0.24      0.80      0.37        25
+             Sports       0.44      0.78      0.56        32
+       Sports Games       0.51      0.78      0.62        23
+              Tools       0.08      0.60      0.14        10
+     Transportation       0.47      0.91      0.62        44
+   Travel and Local       0.69      0.44      0.54        96
+            Weather       0.96      0.57      0.71        83
+
+        avg / total       0.68      0.55      0.58      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.63      0.52      0.57        79
+Books and Reference       0.27      0.70      0.39        37
+   Brain and Puzzle       0.66      0.70      0.68        61
+           Business       0.46      0.36      0.40        84
+   Cards and Casino       0.87      0.71      0.78        73
+             Casual       0.42      0.49      0.45        51
+             Comics       0.17      1.00      0.30         7
+      Communication       0.48      0.67      0.56        55
+          Education       0.62      0.48      0.54        89
+      Entertainment       0.01      0.20      0.03         5
+            Finance       0.86      0.75      0.80        88
+ Health and Fitness       0.71      0.56      0.63       105
+ Libraries and Demo       0.04      1.00      0.08         2
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.53      0.65      0.58        62
+            Medical       0.63      0.74      0.68        61
+    Music and Audio       0.75      0.51      0.61       100
+ News and Magazines       0.76      0.68      0.72        82
+    Personalization       0.86      0.40      0.55       147
+        Photography       0.91      0.38      0.54       155
+       Productivity       0.49      0.18      0.26       194
+             Racing       0.83      0.63      0.72        87
+           Shopping       0.67      0.81      0.73        57
+             Social       0.18      0.78      0.29        18
+             Sports       0.37      0.80      0.51        35
+       Sports Games       0.57      0.72      0.63        36
+              Tools       0.07      0.22      0.11        18
+     Transportation       0.30      0.71      0.42        34
+   Travel and Local       0.68      0.32      0.44       127
+            Weather       0.77      0.53      0.63        51
+
+        avg / total       0.66      0.52      0.55      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.70      0.56      0.62       100
+Books and Reference       0.36      0.70      0.48        37
+   Brain and Puzzle       0.65      0.60      0.63        75
+           Business       0.51      0.51      0.51        79
+   Cards and Casino       0.89      0.73      0.80        93
+             Casual       0.30      0.44      0.36        48
+             Comics       0.10      0.75      0.18         4
+      Communication       0.52      0.64      0.58        69
+          Education       0.62      0.61      0.61        69
+      Entertainment       0.08      0.56      0.14         9
+            Finance       0.88      0.73      0.80        89
+ Health and Fitness       0.64      0.60      0.62        87
+ Libraries and Demo       0.09      0.80      0.17         5
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.46      0.69      0.55        62
+            Medical       0.74      0.74      0.74        68
+    Music and Audio       0.77      0.44      0.56        91
+ News and Magazines       0.74      0.72      0.73        67
+    Personalization       0.88      0.47      0.61       150
+        Photography       0.96      0.42      0.59       153
+       Productivity       0.53      0.17      0.26       173
+             Racing       0.81      0.60      0.69        86
+           Shopping       0.73      0.76      0.75        62
+             Social       0.15      0.65      0.25        20
+             Sports       0.49      0.79      0.60        28
+       Sports Games       0.45      0.81      0.58        31
+              Tools       0.10      0.40      0.16        15
+     Transportation       0.31      0.65      0.42        34
+   Travel and Local       0.68      0.46      0.55       118
+            Weather       0.89      0.54      0.67        78
+
+        avg / total       0.68      0.55      0.58      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.63      0.53      0.58        85
+Books and Reference       0.35      0.61      0.45        36
+   Brain and Puzzle       0.81      0.63      0.71        89
+           Business       0.44      0.30      0.35        98
+   Cards and Casino       0.84      0.76      0.80        83
+             Casual       0.33      0.58      0.42        43
+             Comics       0.13      1.00      0.24         4
+      Communication       0.48      0.66      0.55        65
+          Education       0.57      0.59      0.58        73
+      Entertainment       0.07      0.45      0.13        11
+            Finance       0.88      0.62      0.73        96
+ Health and Fitness       0.59      0.72      0.65        60
+ Libraries and Demo       0.06      0.75      0.11         4
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.48      0.71      0.57        45
+            Medical       0.79      0.73      0.76        73
+    Music and Audio       0.88      0.56      0.68       113
+ News and Magazines       0.66      0.77      0.71        53
+    Personalization       0.93      0.41      0.57       128
+        Photography       0.91      0.42      0.57       148
+       Productivity       0.44      0.14      0.21       205
+             Racing       0.83      0.65      0.73        95
+           Shopping       0.70      0.78      0.74        73
+             Social       0.31      0.80      0.45        25
+             Sports       0.48      0.81      0.61        37
+       Sports Games       0.64      0.64      0.64        33
+              Tools       0.09      0.54      0.15        13
+     Transportation       0.38      0.83      0.52        35
+   Travel and Local       0.73      0.46      0.56       107
+            Weather       0.92      0.67      0.78        70
+
+        avg / total       0.68      0.55      0.57      2000
+
+                     precision    recall  f1-score   support
+
+  Arcade and Action       0.64      0.49      0.55        88
+Books and Reference       0.27      0.74      0.40        34
+   Brain and Puzzle       0.58      0.57      0.58        61
+           Business       0.44      0.49      0.46        63
+   Cards and Casino       0.89      0.78      0.83        94
+             Casual       0.37      0.60      0.45        42
+             Comics       0.08      1.00      0.15         3
+      Communication       0.34      0.58      0.43        48
+          Education       0.69      0.58      0.63        91
+      Entertainment       0.03      0.40      0.06         5
+            Finance       0.81      0.62      0.70        92
+ Health and Fitness       0.67      0.64      0.65        80
+ Libraries and Demo       0.08      0.67      0.14         6
+          Lifestyle       0.00      0.00      0.00         0
+    Media and Video       0.45      0.62      0.52        47
+            Medical       0.72      0.76      0.74        67
+    Music and Audio       0.77      0.57      0.65        88
+ News and Magazines       0.69      0.71      0.70        76
+    Personalization       0.89      0.40      0.56       146
+        Photography       0.95      0.45      0.61       152
+       Productivity       0.56      0.13      0.21       249
+             Racing       0.84      0.57      0.68       101
+           Shopping       0.60      0.72      0.65        68
+             Social       0.21      0.67      0.31        21
+             Sports       0.47      0.86      0.61        29
+       Sports Games       0.49      0.76      0.59        29
+              Tools       0.08      0.40      0.13        15
+     Transportation       0.35      0.69      0.47        32
+   Travel and Local       0.70      0.45      0.55       105
+            Weather       0.83      0.56      0.67        68
+
+        avg / total       0.67      0.53      0.55      2000
