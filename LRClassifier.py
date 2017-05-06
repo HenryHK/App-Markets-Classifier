@@ -15,7 +15,7 @@ def concentrateData(train_data, labeled_data):
                 line.insert(1, l[1])
                 break
     random.shuffle(training_list)
-    return training_list[0:1000]
+    return training_list[0:2000]
 
 def labelCount(training_data):
     labelDict = {}
@@ -29,8 +29,11 @@ def labelCount(training_data):
 def sigmoid(x):
     return 1.0/(1+np.exp(-x))
 
+def loss():
+    pass
+    
 
-def train(training_data, label_data, maxItr=5, alpha=0.5, method='gd'):
+def train(training_data, label_data, maxItr=100, alpha=0.5, method='gd'):
     start_time = time.time()
 
     # construct init weights = [1...]T for all label 13626 * 1
@@ -55,9 +58,6 @@ def train(training_data, label_data, maxItr=5, alpha=0.5, method='gd'):
                 error = label_mat - output # 20103 * 1
                 weightsDict[label] = weightsDict[label] + alpha*tfidf_mat.transpose()*error
                 print("iteration finished")
-        # if method == 'gd':
-        #     for tfidf in tfidf_mat:
-        #         for i in range(maxIter):
 
     end_time = time.time()
     print("The logistic regression takes " + str(end_time - start_time) + "!")
@@ -84,8 +84,8 @@ def main():
     # split training data
     for i in range(0,10):
         random.shuffle(labeled_training_list)
-        test_data = labeled_training_list[0:100]
-        training_data = labeled_training_list[100:]
+        test_data = labeled_training_list[0:200]
+        training_data = labeled_training_list[200:]
         label_data = labelCount(training_data)
 
         weightsDict = train(training_data, label_data)

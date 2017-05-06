@@ -7,6 +7,8 @@ import numpy as np
 import math
 import random
 
+#42%
+
 #merge training and label -> name label tfidf ...
 def concentrateData(train_data, labeled_data):
     training_list = list(csv.reader(open(train_data,'r'), delimiter=','))
