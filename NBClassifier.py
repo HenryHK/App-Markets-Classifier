@@ -68,20 +68,20 @@ for i in range(0,10):
     for data in test_data:
         probDict = {}
         for label in labelProbDict.keys():
-            prob = 1.0
+            prob = 0
             for index in range(13626):
                 if float(data[index+2])>0:
                     # print("positive: "+labelProbDict[label][index])
                     if(labelProbDict[label][index]!=0):
-                        prob += labelProbDict[label][index]
+                        prob += labelProbDict[label][index]*float(data[index+2])
                 # else:
                 #     # print("negative: "+(1-labelProbDict[label][index]))
                 #     #if(1-labelProbDict[label][index]!=0):
                 #     prob *= 1-labelProbDict[label][index]
-            probDict[label] = prob + math.log(labelDict[label]/9000)
+            probDict[label] = prob + labelDict[label]/9000
         label = max(probDict.items(), key=itemgetter(1))[0]
         if(label == data[1]):
             result += 1
-    print(result)
+    print(result/1000)
 
 
