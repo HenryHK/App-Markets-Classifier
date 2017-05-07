@@ -42,7 +42,7 @@ def getLabelProb(labeled_training_list, labelDict):
             if(sum([float(x) for x in data[2:]])!=0):
                 for index in range(13626):
                     if float(data[index+2]) > 0:
-                        labelProbDict[data[1]][index] += 1.0 #change lable to data[1]
+                        labelProbDict[data[1]][index] += float(data[index+2]) #change lable to data[1]
     for label in labelDict.keys():
         labelProbDict[label] = labelProbDict[label]/labelDict[label]
     return labelProbDict
