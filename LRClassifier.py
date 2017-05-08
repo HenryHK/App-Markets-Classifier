@@ -32,7 +32,7 @@ def sigmoid(x):
 def loss():
     pass
     
-
+# gradient descent with alpha=0.5 and number of steps=100
 def train(training_data, label_data, maxItr=100, alpha=0.5, method='gd'):
     start_time = time.time()
 
